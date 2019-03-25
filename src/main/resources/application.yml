@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: pixel-starships-crew
+  profiles:
+    active: "local"
+
+info:
+  app:
+    name: Pixel Starships Crew API
+    description:
+    version: 1.0.0
+
+application:
+
+---
+
+spring:
+  profiles: local
+
+application:
+
+---
+
+spring:
+  profiles: dev
+
+---
+
+spring:
+  profiles: qa
+
+---
+
+spring:
+  profiles: prod
+

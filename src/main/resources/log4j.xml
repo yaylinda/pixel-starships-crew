@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+
+    <!-- Defaults -->
+    <Properties>
+        <Property name="log.level">INFO</Property>
+        <Property name="log.dir">logs</Property>
+        <Property name="log.name">generic-backend.log</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level}{INFO=blue} [%15.25thread] %highlight{[%15.30logger{30}]}{INFO=cyan} - %highlight{%msg%n}{INFO=0}"/>
+        </Console>
+
+        <RollingFile name="RollingFile" fileName="${sys:log.dir}/${sys:log.name}"
+                     filePattern="${sys:log.dir}/${sys:log.name}.%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>${hostName} %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level CorrelationId=%X{Client-Correlation-Id} [%thread] %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="120"/>
+        </RollingFile>
+
+        <Async name="AsyncFileAppender">
+            <AppenderRef ref="RollingFile"/>
+        </Async>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="main" level="${sys:log.level}">
+            <AppenderRef ref="AsyncFileAppender"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Root level="${sys:log.level}" additivity="false">
+            <AppenderRef ref="AsyncFileAppender"/>
+
+            <AppenderRef ref="Console">
+                <ScriptFilter onMatch="ACCEPT" onMisMatch="DENY">
+                    <Script name="selector" language="groovy"><![CDATA[
+                return System.getProperty("spring.profiles.active", "local").contains("local")
+                ]]></Script>
+                </ScriptFilter>
+            </AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>
