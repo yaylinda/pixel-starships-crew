@@ -18,6 +18,10 @@ spring:
   profiles: local
 
 application:
+  mongo:
+    host: localhost
+    port: 27017
+    databaseName: pixelStarshipsDb
 
 ---
 
