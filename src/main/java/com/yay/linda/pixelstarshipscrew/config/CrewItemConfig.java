@@ -9,10 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -29,8 +27,9 @@ public class CrewItemConfig {
     }
 
     @Bean
-    public List<JsonItem> items() {
-
-        return new ArrayList<>();
+    public List<JsonItem> items() throws IOException {
+        File file = ResourceUtils.getFile("classpath:items.json");
+        Map<String, JsonItem> itemData = objectMapper.readValue(file, new TypeReference<Map<String, JsonItem>>() {});
+        return new ArrayList<>(itemData.values());
     }
 }
