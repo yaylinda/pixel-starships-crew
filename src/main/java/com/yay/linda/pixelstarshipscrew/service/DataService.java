@@ -13,13 +13,16 @@ import java.util.List;
 public class DataService {
 
     @Autowired
-    private CrewItemConfig crewItemConfig;
+    private List<Crew> crew;
+
+    @Autowired
+    private List<Item> items;
 
     public List<Crew> getCrew() throws IOException {
-        return crewItemConfig.crew();
+        return crew;
     }
 
     public List<Item> getItems() throws IOException {
-        return crewItemConfig.items();
+        return items;
     }
 }

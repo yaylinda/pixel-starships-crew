@@ -17,6 +17,7 @@ public class Crew {
     private Map<String, Object> equipment;
     private Integer fire_resist;
     private List<Double> hp;
+    private String id;
     private String name;
     private List<Double> pilot;
     private String rarity;
