@@ -31,6 +31,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -128,6 +130,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -225,6 +229,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -322,6 +328,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -419,6 +427,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -3744,6 +3754,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -7117,6 +7129,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -7214,6 +7228,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -17601,9 +17617,9 @@
     ],
     "special_ability": "System Hack",
     "sprite": {
-      "height": 96,
-      "source": 1931,
-      "width": 89,
+      "height": 113,
+      "source": 4907,
+      "width": 149,
       "x": 0,
       "y": 0
     },
@@ -22704,6 +22720,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -22807,6 +22825,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -22910,6 +22930,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23013,6 +23035,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23116,6 +23140,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23219,6 +23245,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23322,6 +23350,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23425,6 +23455,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23528,6 +23560,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23631,6 +23665,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23734,6 +23770,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23837,6 +23875,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -23940,6 +23980,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -24043,6 +24085,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -24146,6 +24190,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -24249,6 +24295,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -24352,6 +24400,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -24455,6 +24505,8 @@
     ],
     "equipment": {
       "Accessory": {},
+      "Body": {},
+      "Hand": {},
       "Head": {},
       "Leg": {}
     },
@@ -25317,8 +25369,8 @@
     "special_ability": "Ultra Dismantle",
     "sprite": {
       "height": 97,
-      "source": 1208,
-      "width": 86,
+      "source": 3852,
+      "width": 131,
       "x": 0,
       "y": 0
     },
@@ -26330,7 +26382,7 @@
       "x": 0,
       "y": 0
     },
-    "training_limit": 100,
+    "training_limit": 70,
     "walk": 1,
     "weapon": [
       8.0,
@@ -31252,6 +31304,198 @@
     ],
     "width": 24
   },
+  "327": {
+    "ability": [
+      4.0,
+      6.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 767,
+      "y": 39
+    },
+    "attack": [
+      2.0,
+      3.0
+    ],
+    "body_sprite": {
+      "height": 9,
+      "source": 4887,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 0,
+    "collection_name": "",
+    "collection_sprite": null,
+    "engine": [
+      2.0,
+      6.0
+    ],
+    "equipment": {
+      "Body": {},
+      "Hand": {}
+    },
+    "fire_resist": 2,
+    "head_sprite": {
+      "height": 19,
+      "source": 4886,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      3,
+      8
+    ],
+    "id": 327,
+    "leg_sprite": {
+      "height": 9,
+      "source": 4888,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Wandering Spirit",
+    "pilot": [
+      2.0,
+      8.0
+    ],
+    "progression_type": "Linear",
+    "rarity": "unique",
+    "rarity_order": 3,
+    "repair": [
+      1.0,
+      2.0
+    ],
+    "research": [
+      1.0,
+      4.0
+    ],
+    "resurrect": 0,
+    "run": 3,
+    "science": [
+      6.0,
+      15.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Critical Strike",
+    "sprite": {
+      "height": 93,
+      "source": 4885,
+      "width": 113,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 70,
+    "walk": 1,
+    "weapon": [
+      2.7,
+      8.0
+    ],
+    "width": 30
+  },
+  "328": {
+    "ability": [
+      3.0,
+      7.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 786,
+      "y": 20
+    },
+    "attack": [
+      1.9,
+      2.9
+    ],
+    "body_sprite": {
+      "height": 11,
+      "source": 4883,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 0,
+    "collection_name": "",
+    "collection_sprite": null,
+    "engine": [
+      3.0,
+      15.0
+    ],
+    "equipment": {
+      "Accessory": {},
+      "Hand": {}
+    },
+    "fire_resist": 1,
+    "head_sprite": {
+      "height": 19,
+      "source": 4882,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      5,
+      12
+    ],
+    "id": 328,
+    "leg_sprite": {
+      "height": 9,
+      "source": 4884,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Ancestral Spirit",
+    "pilot": [
+      1.0,
+      4.0
+    ],
+    "progression_type": "EaseIn",
+    "rarity": "hero",
+    "rarity_order": 5,
+    "repair": [
+      1.9,
+      2.2
+    ],
+    "research": [
+      1.0,
+      4.0
+    ],
+    "resurrect": 0,
+    "run": 2,
+    "science": [
+      4.0,
+      9.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Gas",
+    "sprite": {
+      "height": 96,
+      "source": 4881,
+      "width": 169,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 90,
+    "walk": 1,
+    "weapon": [
+      12.0,
+      22.0
+    ],
+    "width": 30
+  },
   "329": {
     "ability": [
       5.0,
@@ -31449,5 +31693,392 @@
       10.0
     ],
     "width": 20
+  },
+  "331": {
+    "ability": [
+      5.0,
+      8.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 786,
+      "y": 20
+    },
+    "attack": [
+      1.6,
+      2.6
+    ],
+    "body_sprite": {
+      "height": 9,
+      "source": 4913,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 0,
+    "collection_name": "",
+    "collection_sprite": null,
+    "engine": [
+      1.0,
+      8.0
+    ],
+    "equipment": {
+      "Accessory": {}
+    },
+    "fire_resist": 0,
+    "head_sprite": {
+      "height": 14,
+      "source": 4912,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      3,
+      9
+    ],
+    "id": 331,
+    "leg_sprite": {
+      "height": 5,
+      "source": 4914,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Mangrove",
+    "pilot": [
+      0.0,
+      6.0
+    ],
+    "progression_type": "Linear",
+    "rarity": "unique",
+    "rarity_order": 3,
+    "repair": [
+      1.4,
+      1.8
+    ],
+    "research": [
+      1.0,
+      5.0
+    ],
+    "resurrect": 0,
+    "run": 2,
+    "science": [
+      1.0,
+      9.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Gas",
+    "sprite": {
+      "height": 98,
+      "source": 4924,
+      "width": 103,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 70,
+    "walk": 1,
+    "weapon": [
+      1.0,
+      8.0
+    ],
+    "width": 30
+  },
+  "332": {
+    "ability": [
+      4.0,
+      8.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 786,
+      "y": 20
+    },
+    "attack": [
+      1.6,
+      2.6
+    ],
+    "body_sprite": {
+      "height": 7,
+      "source": 4916,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 0,
+    "collection_name": "",
+    "collection_sprite": null,
+    "engine": [
+      1.0,
+      8.0
+    ],
+    "equipment": {
+      "Head": {}
+    },
+    "fire_resist": 0,
+    "head_sprite": {
+      "height": 11,
+      "source": 4915,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      3,
+      9
+    ],
+    "id": 332,
+    "leg_sprite": {
+      "height": 7,
+      "source": 4917,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Cypress",
+    "pilot": [
+      1.0,
+      8.0
+    ],
+    "progression_type": "Linear",
+    "rarity": "unique",
+    "rarity_order": 3,
+    "repair": [
+      1.0,
+      2.0
+    ],
+    "research": [
+      1.0,
+      5.0
+    ],
+    "resurrect": 0,
+    "run": 2,
+    "science": [
+      1.4,
+      11.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Gas",
+    "sprite": {
+      "height": 97,
+      "source": 4926,
+      "width": 115,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 70,
+    "walk": 1,
+    "weapon": [
+      1.0,
+      8.0
+    ],
+    "width": 30
+  },
+  "333": {
+    "ability": [
+      4.0,
+      7.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 786,
+      "y": 20
+    },
+    "attack": [
+      2.2,
+      3.0
+    ],
+    "body_sprite": {
+      "height": 6,
+      "source": 4919,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 0,
+    "collection_name": "",
+    "collection_sprite": null,
+    "engine": [
+      1.0,
+      8.0
+    ],
+    "equipment": {
+      "Hand": {}
+    },
+    "fire_resist": 0,
+    "head_sprite": {
+      "height": 12,
+      "source": 4918,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      3,
+      9
+    ],
+    "id": 333,
+    "leg_sprite": {
+      "height": 3,
+      "source": 4920,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Papyrus",
+    "pilot": [
+      0.0,
+      6.0
+    ],
+    "progression_type": "Linear",
+    "rarity": "unique",
+    "rarity_order": 3,
+    "repair": [
+      1.0,
+      2.0
+    ],
+    "research": [
+      1.0,
+      5.0
+    ],
+    "resurrect": 0,
+    "run": 2,
+    "science": [
+      1.0,
+      9.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Gas",
+    "sprite": {
+      "height": 94,
+      "source": 4925,
+      "width": 152,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 70,
+    "walk": 1,
+    "weapon": [
+      1.4,
+      10.0
+    ],
+    "width": 30
+  },
+  "334": {
+    "ability": [
+      5.0,
+      10.0
+    ],
+    "ability_sprite": {
+      "height": 17,
+      "source": 1537,
+      "width": 17,
+      "x": 767,
+      "y": 39
+    },
+    "attack": [
+      2.2,
+      3.3
+    ],
+    "body_sprite": {
+      "height": 14,
+      "source": 4928,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "collection": 5,
+    "collection_name": "Critters",
+    "collection_sprite": {
+      "height": 18,
+      "source": 3604,
+      "width": 18,
+      "x": 67,
+      "y": 1005
+    },
+    "engine": [
+      8.0,
+      10.0
+    ],
+    "equipment": {
+      "Accessory": {},
+      "Hand": {}
+    },
+    "fire_resist": 1,
+    "head_sprite": {
+      "height": 16,
+      "source": 4927,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "hp": [
+      3,
+      9
+    ],
+    "id": 334,
+    "leg_sprite": {
+      "height": 4,
+      "source": 4929,
+      "width": 30,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Timber",
+    "pilot": [
+      0.0,
+      9.0
+    ],
+    "progression_type": "Linear",
+    "rarity": "hero",
+    "rarity_order": 5,
+    "repair": [
+      1.2,
+      1.5
+    ],
+    "research": [
+      7.0,
+      9.0
+    ],
+    "resurrect": 0,
+    "run": 2,
+    "science": [
+      8.0,
+      10.0
+    ],
+    "shield": [
+      0.0,
+      0.0
+    ],
+    "special_ability": "Critical Strike",
+    "sprite": {
+      "height": 101,
+      "source": 4930,
+      "width": 117,
+      "x": 0,
+      "y": 0
+    },
+    "training_limit": 90,
+    "walk": 1,
+    "weapon": [
+      10.0,
+      25.0
+    ],
+    "width": 30
   }
 }

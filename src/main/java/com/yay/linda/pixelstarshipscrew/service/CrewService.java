@@ -16,6 +16,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.COLLECTION;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.RARITY;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.SPECIAL_ABILITY;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.WEAPON_SLOT;
+
 @Service
 public class CrewService {
 
@@ -57,7 +62,15 @@ public class CrewService {
     public CrewAnalysis getCrewAnalysisForUser(String sessionToken) {
         List<UserCrew> crew = getCrewForUser(sessionToken);
 
+        CrewAnalysis analysis = new CrewAnalysis(crew.size());
 
-        return new CrewAnalysis();
+        crew.forEach(c -> {
+            analysis.addStat(SPECIAL_ABILITY, c.getSpecialAbility(), c.getCrewName());
+            analysis.addStat(COLLECTION, c.getCollection(), c.getCrewName());
+            analysis.addStat(RARITY, c.getRarity(), c.getCrewName());
+            c.getWeaponSlots().forEach(w -> analysis.addStat(WEAPON_SLOT, w, c.getCrewName()));
+        });
+
+        return analysis;
     }
 }
