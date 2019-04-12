@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Crew {
+public class CrewData {
     private List<Double> ability;
     private List<Double> attack;
     private Integer collection;
@@ -17,7 +17,7 @@ public class Crew {
     private Map<String, Object> equipment;
     private Integer fire_resist;
     private List<Double> hp;
-    private String id;
+    private Integer id;
     private String name;
     private List<Double> pilot;
     private String rarity;

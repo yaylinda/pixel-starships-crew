@@ -25162,29 +25162,6 @@
     },
     "type": "Equipment"
   },
-  "710": {
-    "bonus": 20.0,
-    "description": "Oh look! A random gift, wonder what's inside?",
-    "disp_enhancement": null,
-    "enhancement": "none",
-    "fair_price": 57,
-    "id": 710,
-    "ingredients": "",
-    "market_price": 57,
-    "name": "April Fools Gift",
-    "prices": null,
-    "rarity": "unique",
-    "recipe": [],
-    "slot": "Instant Prize",
-    "sprite": {
-      "height": 24,
-      "source": 1391,
-      "width": 25,
-      "x": 270,
-      "y": 34
-    },
-    "type": "Equipment"
-  },
   "711": {
     "bonus": 20.0,
     "description": "Oh look! A random gift, wonder what's inside?",

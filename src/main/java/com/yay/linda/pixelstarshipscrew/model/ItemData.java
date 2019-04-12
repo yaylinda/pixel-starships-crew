@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Item {
+public class ItemData {
     private Double bonus;
     private String description;
     private String disp_enhancement;

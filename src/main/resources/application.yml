@@ -6,7 +6,7 @@ spring:
 
 info:
   app:
-    name: Pixel Starships Crew API
+    name: Pixel Starships CrewData API
     description:
     version: 1.0.0
 
