@@ -11,14 +11,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.COLLECTION;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.ENGINEER;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.PILOT;
 import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.RARITY;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.SCIENCE;
 import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.SPECIAL_ABILITY;
+import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.WEAPON;
 import static com.yay.linda.pixelstarshipscrew.model.AnalysisType.WEAPON_SLOT;
 
 @Service
@@ -65,10 +68,15 @@ public class CrewService {
         CrewAnalysis analysis = new CrewAnalysis(crew.size());
 
         crew.forEach(c -> {
-            analysis.addStat(SPECIAL_ABILITY, c.getSpecialAbility(), c.getCrewName());
-            analysis.addStat(COLLECTION, c.getCollection(), c.getCrewName());
-            analysis.addStat(RARITY, c.getRarity(), c.getCrewName());
-            c.getWeaponSlots().forEach(w -> analysis.addStat(WEAPON_SLOT, w, c.getCrewName()));
+            String crewName = c.getCrewName();
+            analysis.collectStat(SPECIAL_ABILITY, c.getSpecialAbility(), crewName, null);
+            analysis.collectStat(COLLECTION, c.getCollection(), crewName, null);
+            analysis.collectStat(RARITY, c.getRarity(), crewName, null);
+            c.getWeaponSlots().forEach(w -> analysis.collectStat(WEAPON_SLOT, w, crewName, null));
+            analysis.collectStat(PILOT, null, crewName, c.getPilot());
+            analysis.collectStat(SCIENCE, null, crewName, c.getScience());
+            analysis.collectStat(ENGINEER, null, crewName, c.getEngineer());
+            analysis.collectStat(WEAPON, null, crewName, c.getWeapon());
         });
 
         return analysis;

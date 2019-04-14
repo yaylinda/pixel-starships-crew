@@ -4,5 +4,9 @@ public enum AnalysisType {
     SPECIAL_ABILITY,
     COLLECTION,
     RARITY,
-    WEAPON_SLOT;
+    WEAPON_SLOT,
+    PILOT,
+    SCIENCE,
+    ENGINEER,
+    WEAPON;
 }
