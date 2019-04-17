@@ -1,6 +1,7 @@
 package com.yay.linda.pixelstarshipscrew.api;
 
 import com.yay.linda.pixelstarshipscrew.model.CrewAnalysis;
+import com.yay.linda.pixelstarshipscrew.model.RankScore;
 import com.yay.linda.pixelstarshipscrew.model.UserCrew;
 import com.yay.linda.pixelstarshipscrew.service.CrewService;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/crew")
