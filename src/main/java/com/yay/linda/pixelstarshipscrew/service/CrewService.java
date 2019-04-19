@@ -67,6 +67,24 @@ public class CrewService {
         return getCrewForUser(sessionToken);
     }
 
+    public List<UserCrew> deleteCrewForUser(String sessionToken, List<String> crewToDelete) {
+        User user = userService.getUserFromSessionToken(sessionToken);
+
+        List<UserCrewEntity> currentCrew = userCrewRepository.findByUsername(user.getUsername());
+
+        LOGGER.info("Retrieved {} current crew for {}", currentCrew.size(), user.getUsername());
+
+        for (UserCrewEntity crew : currentCrew) {
+            String crewName = dataService.getCrewDataById(crew.getCrewId()).getName();
+            if (crewToDelete.contains(crewName.toLowerCase())) {
+                LOGGER.info("Deleting crew: {}", crewName);
+                userCrewRepository.deleteById(crew.getId());
+            }
+        }
+
+        return getCrewForUser(sessionToken);
+    }
+
     public CrewAnalysis getCrewAnalysisForUser(String sessionToken) {
         List<UserCrew> crew = getCrewForUser(sessionToken);
 
