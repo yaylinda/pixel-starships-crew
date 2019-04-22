@@ -25,7 +25,7 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(new ApiInfo(
-                        "PixelStarships CrewData, Items, Rooms Helper",
+                        "PixelStarships CrewData, Items, Room Helper",
                         "A Simple API to assist with PixelStarships strategic crew, items, room placement and assignment",
                         "1.0",
                         "termsOfServiceUrl",

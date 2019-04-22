@@ -46,6 +46,11 @@ public class CrewService {
     @Autowired
     private DataService dataService;
 
+    /**
+     *
+     * @param sessionToken
+     * @return
+     */
     public List<UserCrew> getCrewForUser(String sessionToken) {
         User user = userService.getUserFromSessionToken(sessionToken);
 
@@ -54,6 +59,12 @@ public class CrewService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     *
+     * @param sessionToken
+     * @param crewToAdd
+     * @return
+     */
     public List<UserCrew> addCrewForUser(String sessionToken, List<String> crewToAdd) {
         User user = userService.getUserFromSessionToken(sessionToken);
 
@@ -67,6 +78,12 @@ public class CrewService {
         return getCrewForUser(sessionToken);
     }
 
+    /**
+     *
+     * @param sessionToken
+     * @param crewToDelete
+     * @return
+     */
     public List<UserCrew> deleteCrewForUser(String sessionToken, List<String> crewToDelete) {
         User user = userService.getUserFromSessionToken(sessionToken);
 
@@ -85,6 +102,11 @@ public class CrewService {
         return getCrewForUser(sessionToken);
     }
 
+    /**
+     *
+     * @param sessionToken
+     * @return
+     */
     public CrewAnalysis getCrewAnalysisForUser(String sessionToken) {
         List<UserCrew> crew = getCrewForUser(sessionToken);
 
